@@ -22,7 +22,7 @@ struct tabbarView: View {
               CurriculumView()
                 .tabItem {
                   Image(systemName: "2.square.fill")
-                  Text("커리큘럼")
+                  Text("선수과목제도")
                 }
                 .tag(2)
             MainView()
