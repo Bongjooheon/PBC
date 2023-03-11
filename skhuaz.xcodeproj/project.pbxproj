@@ -43,14 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01CD2DB129B584AE0073AB99 /* PBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01CD2DB129B584AE0073AB99 /* skhuaz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skhuaz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01CD2DB429B584AE0073AB99 /* PBCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBCApp.swift; sourceTree = "<group>"; };
 		01CD2DB629B584AE0073AB99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01CD2DB829B584AE0073AB99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01CD2DBB29B584AE0073AB99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		01CD2DC129B584AE0073AB99 /* PBCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PBCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01CD2DC129B584AE0073AB99 /* skhuazTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skhuazTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01CD2DC529B584AE0073AB99 /* PBCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBCTests.swift; sourceTree = "<group>"; };
-		01CD2DCB29B584AE0073AB99 /* PBCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PBCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01CD2DCB29B584AE0073AB99 /* skhuazUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skhuazUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01CD2DCF29B584AE0073AB99 /* PBCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBCUITests.swift; sourceTree = "<group>"; };
 		01CD2DD129B584AE0073AB99 /* PBCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBCUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01CD2DDE29B5BB760073AB99 /* CurriculumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumView.swift; sourceTree = "<group>"; };
@@ -102,9 +102,9 @@
 		01CD2DB229B584AE0073AB99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				01CD2DB129B584AE0073AB99 /* PBC.app */,
-				01CD2DC129B584AE0073AB99 /* PBCTests.xctest */,
-				01CD2DCB29B584AE0073AB99 /* PBCUITests.xctest */,
+				01CD2DB129B584AE0073AB99 /* skhuaz.app */,
+				01CD2DC129B584AE0073AB99 /* skhuazTests.xctest */,
+				01CD2DCB29B584AE0073AB99 /* skhuazUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,9 +157,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		01CD2DB029B584AE0073AB99 /* PBC */ = {
+		01CD2DB029B584AE0073AB99 /* skhuaz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01CD2DD529B584AE0073AB99 /* Build configuration list for PBXNativeTarget "PBC" */;
+			buildConfigurationList = 01CD2DD529B584AE0073AB99 /* Build configuration list for PBXNativeTarget "skhuaz" */;
 			buildPhases = (
 				01CD2DAD29B584AE0073AB99 /* Sources */,
 				01CD2DAE29B584AE0073AB99 /* Frameworks */,
@@ -169,14 +169,14 @@
 			);
 			dependencies = (
 			);
-			name = PBC;
+			name = skhuaz;
 			productName = PBC;
-			productReference = 01CD2DB129B584AE0073AB99 /* PBC.app */;
+			productReference = 01CD2DB129B584AE0073AB99 /* skhuaz.app */;
 			productType = "com.apple.product-type.application";
 		};
-		01CD2DC029B584AE0073AB99 /* PBCTests */ = {
+		01CD2DC029B584AE0073AB99 /* skhuazTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01CD2DD829B584AE0073AB99 /* Build configuration list for PBXNativeTarget "PBCTests" */;
+			buildConfigurationList = 01CD2DD829B584AE0073AB99 /* Build configuration list for PBXNativeTarget "skhuazTests" */;
 			buildPhases = (
 				01CD2DBD29B584AE0073AB99 /* Sources */,
 				01CD2DBE29B584AE0073AB99 /* Frameworks */,
@@ -187,14 +187,14 @@
 			dependencies = (
 				01CD2DC329B584AE0073AB99 /* PBXTargetDependency */,
 			);
-			name = PBCTests;
+			name = skhuazTests;
 			productName = PBCTests;
-			productReference = 01CD2DC129B584AE0073AB99 /* PBCTests.xctest */;
+			productReference = 01CD2DC129B584AE0073AB99 /* skhuazTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		01CD2DCA29B584AE0073AB99 /* PBCUITests */ = {
+		01CD2DCA29B584AE0073AB99 /* skhuazUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01CD2DDB29B584AE0073AB99 /* Build configuration list for PBXNativeTarget "PBCUITests" */;
+			buildConfigurationList = 01CD2DDB29B584AE0073AB99 /* Build configuration list for PBXNativeTarget "skhuazUITests" */;
 			buildPhases = (
 				01CD2DC729B584AE0073AB99 /* Sources */,
 				01CD2DC829B584AE0073AB99 /* Frameworks */,
@@ -205,9 +205,9 @@
 			dependencies = (
 				01CD2DCD29B584AE0073AB99 /* PBXTargetDependency */,
 			);
-			name = PBCUITests;
+			name = skhuazUITests;
 			productName = PBCUITests;
-			productReference = 01CD2DCB29B584AE0073AB99 /* PBCUITests.xctest */;
+			productReference = 01CD2DCB29B584AE0073AB99 /* skhuazUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -233,7 +233,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 01CD2DAC29B584AE0073AB99 /* Build configuration list for PBXProject "PBC" */;
+			buildConfigurationList = 01CD2DAC29B584AE0073AB99 /* Build configuration list for PBXProject "skhuaz" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -246,9 +246,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				01CD2DB029B584AE0073AB99 /* PBC */,
-				01CD2DC029B584AE0073AB99 /* PBCTests */,
-				01CD2DCA29B584AE0073AB99 /* PBCUITests */,
+				01CD2DB029B584AE0073AB99 /* skhuaz */,
+				01CD2DC029B584AE0073AB99 /* skhuazTests */,
+				01CD2DCA29B584AE0073AB99 /* skhuazUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -320,12 +320,12 @@
 /* Begin PBXTargetDependency section */
 		01CD2DC329B584AE0073AB99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 01CD2DB029B584AE0073AB99 /* PBC */;
+			target = 01CD2DB029B584AE0073AB99 /* skhuaz */;
 			targetProxy = 01CD2DC229B584AE0073AB99 /* PBXContainerItemProxy */;
 		};
 		01CD2DCD29B584AE0073AB99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 01CD2DB029B584AE0073AB99 /* PBC */;
+			target = 01CD2DB029B584AE0073AB99 /* skhuaz */;
 			targetProxy = 01CD2DCC29B584AE0073AB99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -516,7 +516,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PBC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PBC";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skhuaz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/skhuaz";
 			};
 			name = Debug;
 		};
@@ -535,7 +535,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PBC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PBC";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skhuaz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/skhuaz";
 			};
 			name = Release;
 		};
@@ -576,7 +576,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01CD2DAC29B584AE0073AB99 /* Build configuration list for PBXProject "PBC" */ = {
+		01CD2DAC29B584AE0073AB99 /* Build configuration list for PBXProject "skhuaz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01CD2DD329B584AE0073AB99 /* Debug */,
@@ -585,7 +585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		01CD2DD529B584AE0073AB99 /* Build configuration list for PBXNativeTarget "PBC" */ = {
+		01CD2DD529B584AE0073AB99 /* Build configuration list for PBXNativeTarget "skhuaz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01CD2DD629B584AE0073AB99 /* Debug */,
@@ -594,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		01CD2DD829B584AE0073AB99 /* Build configuration list for PBXNativeTarget "PBCTests" */ = {
+		01CD2DD829B584AE0073AB99 /* Build configuration list for PBXNativeTarget "skhuazTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01CD2DD929B584AE0073AB99 /* Debug */,
@@ -603,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		01CD2DDB29B584AE0073AB99 /* Build configuration list for PBXNativeTarget "PBCUITests" */ = {
+		01CD2DDB29B584AE0073AB99 /* Build configuration list for PBXNativeTarget "skhuazUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01CD2DDC29B584AE0073AB99 /* Debug */,
