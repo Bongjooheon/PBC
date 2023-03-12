@@ -9,10 +9,9 @@ import SwiftUI
 
 struct tabbarView: View {
     
-    @State private var selection = 3
-    
+    @State var index = 3
     var body: some View {
-        TabView(selection: $selection) {
+        TabView(selection: $index) {
             EvaluationView()
                 .tabItem {
                   Image(systemName: "1.square.fill")

@@ -23,6 +23,13 @@
 		01CD2DEB29B5BC840073AB99 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DEA29B5BC840073AB99 /* SettingView.swift */; };
 		01CD2DED29B5BC8D0073AB99 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DEC29B5BC8D0073AB99 /* Signup.swift */; };
 		01CD2DF129B5BD210073AB99 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DF029B5BD210073AB99 /* TabbarView.swift */; };
+		01CD2DF529BC6B360073AB99 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DF429BC6B360073AB99 /* CheckBoxView.swift */; };
+		01CD2DF729BC712D0073AB99 /* LisTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DF629BC712D0073AB99 /* LisTView.swift */; };
+		01CD2DF929BC77AE0073AB99 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DF829BC77AE0073AB99 /* ColorView.swift */; };
+		01CD2DFB29BC80120073AB99 /* chartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DFA29BC80120073AB99 /* chartView.swift */; };
+		01CD2DFE29BC8C9F0073AB99 /* EvaluationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DFD29BC8C9F0073AB99 /* EvaluationDetailView.swift */; };
+		01CD2E0029BC8FA00073AB99 /* meNuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DFF29BC8FA00073AB99 /* meNuView.swift */; };
+		01CD2E0229BDBC630073AB99 /* myEvaluationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2E0129BDBC630073AB99 /* myEvaluationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +69,13 @@
 		01CD2DEA29B5BC840073AB99 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		01CD2DEC29B5BC8D0073AB99 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		01CD2DF029B5BD210073AB99 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		01CD2DF429BC6B360073AB99 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		01CD2DF629BC712D0073AB99 /* LisTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LisTView.swift; sourceTree = "<group>"; };
+		01CD2DF829BC77AE0073AB99 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		01CD2DFA29BC80120073AB99 /* chartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartView.swift; sourceTree = "<group>"; };
+		01CD2DFD29BC8C9F0073AB99 /* EvaluationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationDetailView.swift; sourceTree = "<group>"; };
+		01CD2DFF29BC8FA00073AB99 /* meNuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meNuView.swift; sourceTree = "<group>"; };
+		01CD2E0129BDBC630073AB99 /* myEvaluationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myEvaluationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +106,7 @@
 		01CD2DA829B584AE0073AB99 = {
 			isa = PBXGroup;
 			children = (
+				01CD2DFC29BC871F0073AB99 /* SorceView */,
 				01CD2DB329B584AE0073AB99 /* PBC */,
 				01CD2DC429B584AE0073AB99 /* PBCTests */,
 				01CD2DCE29B584AE0073AB99 /* PBCUITests */,
@@ -112,17 +127,23 @@
 		01CD2DB329B584AE0073AB99 /* PBC */ = {
 			isa = PBXGroup;
 			children = (
+				01CD2DFF29BC8FA00073AB99 /* meNuView.swift */,
+				01CD2DF629BC712D0073AB99 /* LisTView.swift */,
 				01CD2DB429B584AE0073AB99 /* PBCApp.swift */,
 				01CD2DB629B584AE0073AB99 /* ContentView.swift */,
 				01CD2DDE29B5BB760073AB99 /* CurriculumView.swift */,
 				01CD2DE029B5BC250073AB99 /* EvaluationView.swift */,
+				01CD2DFD29BC8C9F0073AB99 /* EvaluationDetailView.swift */,
+				01CD2E0129BDBC630073AB99 /* myEvaluationView.swift */,
+				01CD2DF429BC6B360073AB99 /* CheckBoxView.swift */,
 				01CD2DE229B5BC320073AB99 /* FindView.swift */,
 				01CD2DE429B5BC3E0073AB99 /* LoginView.swift */,
+				01CD2DF829BC77AE0073AB99 /* ColorView.swift */,
+				01CD2DEC29B5BC8D0073AB99 /* Signup.swift */,
 				01CD2DF029B5BD210073AB99 /* TabbarView.swift */,
 				01CD2DE629B5BC5B0073AB99 /* MainView.swift */,
 				01CD2DE829B5BC7A0073AB99 /* RootView.swift */,
 				01CD2DEA29B5BC840073AB99 /* SettingView.swift */,
-				01CD2DEC29B5BC8D0073AB99 /* Signup.swift */,
 				01CD2DB829B584AE0073AB99 /* Assets.xcassets */,
 				01CD2DBA29B584AE0073AB99 /* Preview Content */,
 			);
@@ -152,6 +173,14 @@
 				01CD2DD129B584AE0073AB99 /* PBCUITestsLaunchTests.swift */,
 			);
 			path = PBCUITests;
+			sourceTree = "<group>";
+		};
+		01CD2DFC29BC871F0073AB99 /* SorceView */ = {
+			isa = PBXGroup;
+			children = (
+				01CD2DFA29BC80120073AB99 /* chartView.swift */,
+			);
+			path = SorceView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,15 +314,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				01CD2DE929B5BC7A0073AB99 /* RootView.swift in Sources */,
+				01CD2E0029BC8FA00073AB99 /* meNuView.swift in Sources */,
+				01CD2E0229BDBC630073AB99 /* myEvaluationView.swift in Sources */,
 				01CD2DED29B5BC8D0073AB99 /* Signup.swift in Sources */,
+				01CD2DF929BC77AE0073AB99 /* ColorView.swift in Sources */,
 				01CD2DE529B5BC3E0073AB99 /* LoginView.swift in Sources */,
 				01CD2DE729B5BC5B0073AB99 /* MainView.swift in Sources */,
 				01CD2DEB29B5BC840073AB99 /* SettingView.swift in Sources */,
 				01CD2DF129B5BD210073AB99 /* TabbarView.swift in Sources */,
 				01CD2DE329B5BC320073AB99 /* FindView.swift in Sources */,
+				01CD2DF529BC6B360073AB99 /* CheckBoxView.swift in Sources */,
 				01CD2DDF29B5BB760073AB99 /* CurriculumView.swift in Sources */,
 				01CD2DB729B584AE0073AB99 /* ContentView.swift in Sources */,
+				01CD2DFE29BC8C9F0073AB99 /* EvaluationDetailView.swift in Sources */,
+				01CD2DFB29BC80120073AB99 /* chartView.swift in Sources */,
 				01CD2DE129B5BC250073AB99 /* EvaluationView.swift in Sources */,
+				01CD2DF729BC712D0073AB99 /* LisTView.swift in Sources */,
 				01CD2DB529B584AE0073AB99 /* PBCApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

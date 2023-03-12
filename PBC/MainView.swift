@@ -19,12 +19,12 @@ struct MainView: View {
                     .padding(.trailing)
                 VStack(alignment: .leading, spacing: 5){
                     HStack{
-                        Text("201814077")
-                        Text("천상구")
+                        Text("201814006")
+                        Text("봉주헌")
                     }
                     Text("소프트웨어공학전공")
                     Text("정보통신공학전공")
-                    Text("3학년 1학기")
+                    Text("4학년 1학기")
                 }
             }
             .padding(.bottom)
@@ -32,7 +32,9 @@ struct MainView: View {
                 Text("내가 최근 쓴 강의평")
                     .padding(.leading, 50)
                 Spacer()
-                Text("더보기")
+                NavigationLink(destination: myEvaluationView(), label: {
+                    Text("더보기")
+                })
                     .padding(.trailing, 50)
             }
             .font(.system(size: 15))
@@ -53,7 +55,7 @@ struct MainView: View {
                     
             }
             .frame(width: 310, height: 40)
-            .background(Color.pink)
+            .background(Color(hex: 0x9AC1D1))
             HStack{
                 Text("강의명 | 교수님명")
                     .padding(.leading, 5)
@@ -65,7 +67,7 @@ struct MainView: View {
                     
             }
             .frame(width: 310, height: 40)
-            .background(Color.pink)
+            .background(Color(hex: 0x9AC1D1))
             HStack{
                 Text("강의명 | 교수님명")
                     .padding(.leading, 5)
@@ -77,7 +79,7 @@ struct MainView: View {
                     
             }
             .frame(width: 310, height: 40)
-            .background(Color.pink)
+            .background(Color(hex: 0x9AC1D1))
             Spacer()
         }
     }

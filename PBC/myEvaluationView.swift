@@ -1,18 +1,17 @@
 //
-//  EvaluationView.swift
-//  PBC
+//  myEvaluationView.swift
+//  skhuaz
 //
-//  Created by 봉주헌 on 2023/03/06.
+//  Created by 봉주헌 on 2023/03/12.
 //
+
 import Charts
 import SwiftUI
 
 
-struct EvaluationView: View {
-    
+struct myEvaluationView: View {
     @State private var input: String = ""
-    
-    
+   
     var body: some View {
         NavigationView{
             VStack{
@@ -33,18 +32,21 @@ struct EvaluationView: View {
                     })
                 }
                 HStack{
-                    CheckBoxView()
+                    Spacer()
                     NavigationLink(
-                        destination: EvaluationDetail(),
+                        destination: tabbarView(index: 1),
                         label: {
-                            Image(systemName: "square.and.pencil")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.bottom, 5)
-                                .foregroundColor(Color(hex: 0x9AC1D1))
-                                .padding(.trailing, 10)
-                                .frame(width: 65, height: 35)
+
+                            Text("강의평 전체 보기")
+                                .foregroundColor(.black)
+                                .frame(width: 150, height: 24)
+                                .background(Color(hex: 0x9AC1D1))
+                                .cornerRadius(5)
+                                .padding(.leading, 200)
                         })
+                   
+
+                    Spacer()
                 }
                 ScrollView{
                     LisTView()
@@ -53,16 +55,13 @@ struct EvaluationView: View {
                 }
                 .padding(.top, -20)
             }
-
         }
         .navigationBarBackButtonHidden(true)
     }
 }
 
-
-
-struct EvaluationView_Previews: PreviewProvider {
+struct myEvaluationView_Previews: PreviewProvider {
     static var previews: some View {
-        EvaluationView()
+        myEvaluationView()
     }
 }
