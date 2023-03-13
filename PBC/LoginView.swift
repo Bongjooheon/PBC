@@ -28,7 +28,7 @@ struct LoginView: View {
                     .background(Color(uiColor: .secondarySystemBackground))
                     .cornerRadius(10)
                 NavigationLink(
-                    destination: tabbarView(),
+                    destination: TabbarView(),
                     label: {
                         Text("로그인")
                             .frame(width: 330, height: 10)

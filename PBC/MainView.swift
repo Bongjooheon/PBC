@@ -1,92 +1,158 @@
-//
-//  MainView.swift
-//  PBC
-//
-//  Created by 봉주헌 on 2023/03/06.
-//
-
 import SwiftUI
 
 struct MainView: View {
+    @Binding var index: Int
     var body: some View {
-        VStack{
-            Spacer()
-            HStack{
-                Image(systemName: "apple.logo")
+        NavigationView{
+            VStack(spacing: 10){
+                Image("Logo")
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 150, height: 150)
-                    .padding(.trailing)
-                VStack(alignment: .leading, spacing: 5){
-                    HStack{
-                        Text("201814006")
-                        Text("봉주헌")
-                    }
-                    Text("소프트웨어공학전공")
-                    Text("정보통신공학전공")
-                    Text("4학년 1학기")
-                }
-            }
-            .padding(.bottom)
-            HStack{
-                Text("내가 최근 쓴 강의평")
-                    .padding(.leading, 50)
+                    .frame(width: 400, height: 200)
+                    .padding(.bottom, 5)
+                user_data()
+                    .padding(.bottom, 5)
+                user_post(index: $index)
+                    .padding(.bottom, 5)
+                user_thumbs()
                 Spacer()
-                NavigationLink(destination: myEvaluationView(), label: {
-                    Text("더보기")
-                })
-                    .padding(.trailing, 50)
             }
-            .font(.system(size: 15))
-            .foregroundColor(Color.gray)
-            .padding(.top, 30)
-            Divider()
-                .background(Color.gray)
-                .frame(width: 310)
-                .padding(.top, 0)
-            HStack{
-                Text("강의명 | 교수님명")
-                    .padding(.leading, 5)
-                    .foregroundColor(Color.white)
-                Spacer()
-                Text("점수 표기")
-                    .padding(.trailing, 5)
-                    .foregroundColor(Color.white)
-                    
-            }
-            .frame(width: 310, height: 40)
-            .background(Color(hex: 0x9AC1D1))
-            HStack{
-                Text("강의명 | 교수님명")
-                    .padding(.leading, 5)
-                    .foregroundColor(Color.white)
-                Spacer()
-                Text("점수 표기")
-                    .padding(.trailing, 5)
-                    .foregroundColor(Color.white)
-                    
-            }
-            .frame(width: 310, height: 40)
-            .background(Color(hex: 0x9AC1D1))
-            HStack{
-                Text("강의명 | 교수님명")
-                    .padding(.leading, 5)
-                    .foregroundColor(Color.white)
-                Spacer()
-                Text("점수 표기")
-                    .padding(.trailing, 5)
-                    .foregroundColor(Color.white)
-                    
-            }
-            .frame(width: 310, height: 40)
-            .background(Color(hex: 0x9AC1D1))
-            Spacer()
         }
     }
 }
 
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
+struct user_thumbs: View{
+    var body: some View{
+        VStack{
+            HStack{
+                Text("최근 진행한 선수과목제도")
+                Spacer()
+               
+            }
+            .font(.system(size: 10))
+            .foregroundColor(Color(hex: 0x7D7D7D))
+            Divider()
+                .background(Color(hex: 0x4F4F4F))
+            Group{
+                Group{
+                    VStack{
+                        HStack{
+                            Text("소프트웨어공학전공")
+                            Spacer()
+                        }
+                        HStack{
+                            Text("자바프로그래밍, 웹개발 입문 > 자료구조, 알고리즘 > 자바프로젝트")
+                            Spacer()
+                        }
+                    }
+                    .padding()
+                }
+                .frame(width: 350, height: 50)
+                .background(Color(uiColor: .secondarySystemBackground))
+                Group{
+                    VStack{
+                        HStack{
+                            Text("소프트웨어공학전공")
+                            Spacer()
+                        }
+                        HStack{
+                            Text("자바프로그래밍, 웹개발 입문 > 자료구조, 알고리즘 > 자바프로젝트")
+                            Spacer()
+                        }
+                    }
+                    .padding()
+                }
+                .frame(width: 350, height: 50)
+                .background(Color(uiColor: .secondarySystemBackground))
+            }
+            .font(.system(size: 10))
+        }
+        .padding(.leading, 20)
+        .padding(.trailing, 20)
+    }
+}
+
+
+struct user_post: View{
+    @Binding var index: Int
+    var body: some View{
+        VStack{
+            HStack{
+                Text("내가 최근 쓴 강의평")
+                Spacer()
+                Button {
+                    self.index = 1
+                } label: {
+                    Text("더 보기")
+                }
+            }
+            .font(.system(size: 10))
+            .foregroundColor(Color(hex: 0x7D7D7D))
+            Divider()
+                .background(Color(hex: 0x4F4F4F))
+            Group{
+                Group{
+                    HStack{
+                        Text("강의명 | 교수님명")
+                        Spacer()
+                        Text("☆★★★★")
+                    }
+                    .padding()
+                }
+                .frame(width: 350, height: 50)
+                .background(Color(uiColor: .secondarySystemBackground))
+                Group{
+                    HStack{
+                        Text("강의명 | 교수님명")
+                        Spacer()
+                        Text("☆★★★★")
+                    }
+                    .padding()
+                }
+                .frame(width: 350, height: 50)
+                .background(Color(uiColor: .secondarySystemBackground))
+            }
+            .font(.system(size: 12))
+        }
+        .padding(.leading, 20)
+        .padding(.trailing, 20)
+    }
+}
+
+struct user_data: View{
+    var body: some View{
+        HStack(spacing: 20){
+            Spacer()
+            ZStack{
+                Circle()
+                    .fill(Color(hex: 0xEFEFEF))
+                    .frame(width: 150, height: 150)
+                
+                Text("프로필 사진")
+                    .foregroundColor(Color(hex: 0x7D7D7D))
+            }
+            VStack(spacing: 5){
+                HStack{
+                    Text("201814077")
+                    Text("천상구")
+                    Spacer()
+                }
+                HStack{
+                    Text("소프트웨어공학전공")
+                    Spacer()
+                }
+                HStack{
+                    Text("정보통신공학전공")
+                    Spacer()
+                }
+                HStack{
+                    Text("4학년 1학기")
+                    Spacer()
+                    
+                }
+            }
+            .font(.system(size: 15))
+
+
+        }
     }
 }
