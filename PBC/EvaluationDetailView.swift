@@ -16,7 +16,7 @@ struct EvaluationDetail: View {
             VStack {
                 Text("촉촉한 초코칩 님은 지금 2023-1 학기 입니다.")
                     .font(.system(size: 17))
-                    .padding(.top, 20)
+                    .padding(.bottom, -10)
                 meNuView()
                     .padding()
                 

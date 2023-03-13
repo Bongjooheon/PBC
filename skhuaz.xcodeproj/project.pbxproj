@@ -30,6 +30,7 @@
 		01CD2DFE29BC8C9F0073AB99 /* EvaluationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DFD29BC8C9F0073AB99 /* EvaluationDetailView.swift */; };
 		01CD2E0029BC8FA00073AB99 /* meNuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DFF29BC8FA00073AB99 /* meNuView.swift */; };
 		01CD2E0229BDBC630073AB99 /* myEvaluationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2E0129BDBC630073AB99 /* myEvaluationView.swift */; };
+		01CD2E0629BED0420073AB99 /* myListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2E0529BED0420073AB99 /* myListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		01CD2DFD29BC8C9F0073AB99 /* EvaluationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationDetailView.swift; sourceTree = "<group>"; };
 		01CD2DFF29BC8FA00073AB99 /* meNuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meNuView.swift; sourceTree = "<group>"; };
 		01CD2E0129BDBC630073AB99 /* myEvaluationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myEvaluationView.swift; sourceTree = "<group>"; };
+		01CD2E0529BED0420073AB99 /* myListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				01CD2DFF29BC8FA00073AB99 /* meNuView.swift */,
 				01CD2DF629BC712D0073AB99 /* LisTView.swift */,
+				01CD2E0529BED0420073AB99 /* myListView.swift */,
 				01CD2DB429B584AE0073AB99 /* PBCApp.swift */,
 				01CD2DB629B584AE0073AB99 /* ContentView.swift */,
 				01CD2DDE29B5BB760073AB99 /* CurriculumView.swift */,
@@ -329,6 +332,7 @@
 				01CD2DFE29BC8C9F0073AB99 /* EvaluationDetailView.swift in Sources */,
 				01CD2DFB29BC80120073AB99 /* chartView.swift in Sources */,
 				01CD2DE129B5BC250073AB99 /* EvaluationView.swift in Sources */,
+				01CD2E0629BED0420073AB99 /* myListView.swift in Sources */,
 				01CD2DF729BC712D0073AB99 /* LisTView.swift in Sources */,
 				01CD2DB529B584AE0073AB99 /* PBCApp.swift in Sources */,
 			);
