@@ -12,7 +12,6 @@ struct EvaluationView: View {
     
     @State private var input: String = ""
     
-    
     var body: some View {
         NavigationView{
             VStack{
@@ -26,14 +25,17 @@ struct EvaluationView: View {
                     .overlay(
                         RoundedRectangle(cornerRadius: 5)
                             .stroke(Color(hex: 0x9AC1D1), lineWidth: 3))
+                    
                     Button(action: {}, label: {
                         Image("검색버튼")
                             .padding()
                             .frame(width: 40)
                     })
+                    .padding(.leading, 11)
                 }
                 HStack{
                     CheckBoxView()
+                        .padding(.leading, 1)
                     NavigationLink(
                         destination: EvaluationDetail(),
                         label: {
@@ -42,10 +44,12 @@ struct EvaluationView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .padding(.bottom, 5)
                                 .foregroundColor(Color(hex: 0x9AC1D1))
-                                .padding(.trailing, 10)
-                                .frame(width: 65, height: 35)
+                                .padding(.trailing, 15)
+                                .frame(width: 50, height: 35)
                         })
                 }
+                .padding(.bottom, 10)
+            
                 ScrollView{
                     LisTView()
                     LisTView()

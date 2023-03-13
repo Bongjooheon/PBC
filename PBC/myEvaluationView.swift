@@ -11,7 +11,8 @@ import SwiftUI
 
 struct myEvaluationView: View {
     @State private var input: String = ""
-   
+    
+    
     var body: some View {
         NavigationView{
             VStack{
@@ -34,18 +35,21 @@ struct myEvaluationView: View {
                 HStack{
                     Spacer()
                     NavigationLink(
-                        destination: tabbarView(index: 1),
+                        destination: EvaluationView(),
                         label: {
 
-                            Text("강의평 전체 보기")
-                                .foregroundColor(.black)
-                                .frame(width: 150, height: 24)
+                            Text("강의평 전체 목록")
+                                .foregroundColor(.white)
+                                .font(.system(size: 15))
+                                .frame(width: 130, height: 24)
                                 .background(Color(hex: 0x9AC1D1))
                                 .cornerRadius(5)
-                                .padding(.leading, 200)
+                                .padding(.leading, 220)
                         })
-                   
-
+                    .padding(.top, 1)
+                    .padding(.bottom, 10)
+                    
+                    
                     Spacer()
                 }
                 ScrollView{
