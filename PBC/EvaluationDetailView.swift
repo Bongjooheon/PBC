@@ -29,6 +29,7 @@ struct EvaluationDetail: View {
                                 self.presentationMode.wrappedValue.dismiss()
                             } label: {
                                 Text("저장")
+                                    .frame(width: 350, height: 40)
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 15))
                             }
@@ -45,8 +46,9 @@ struct EvaluationDetail: View {
                             } label: {
                                 
                                     Text("목록으로")
-                                        .foregroundColor(Color.black)
-                                        .font(.system(size: 15))
+                                    .frame(width: 350, height: 40)
+                                    .foregroundColor(Color.black)
+                                    .font(.system(size: 15))
                                 
                             }
                             
