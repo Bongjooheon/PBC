@@ -14,11 +14,17 @@ struct meNuView : View {
     @State private var cl_major: String = "전공구분"
     @State private var Semester: String = "학기"
     @State private var teample: String = "선택"
+    @State private var hw: String = "선택"
+    @State private var ex: String = "선택"
+    @State private var pr: String = "선택"
     
     @State private var allreview: String = ""
     
     var body: some View {
         VStack{
+            Text("등록자 : 촉촉한 초코칩 | 등록일시 : 2023-03-14 12:25")
+                .font(.system(size: 13).bold())
+                .padding(.leading, 30)
             Rectangle().fill(Color(hex: 0xEFEFEF))
                 .frame(width: 350, height: 40)
                 .cornerRadius(10)
@@ -181,17 +187,17 @@ struct meNuView : View {
                     .cornerRadius(10)
                     .overlay(content: {
                         HStack {
-                            Menu("\(teample)") {
+                            Menu("\(hw)") {
                                 Button("1",
-                                       action: { teample = "1"})
+                                       action: { hw = "1"})
                                 Button("2",
-                                       action: { teample = "2"})
+                                       action: { hw = "2"})
                                 Button("3",
-                                       action: { teample = "3"})
+                                       action: { hw = "3"})
                                 Button("4",
-                                       action: { teample = "4"})
+                                       action: { hw = "4"})
                                 Button("5",
-                                       action: { teample = "5"})
+                                       action: { hw = "5"})
                                 
                             }
                             .foregroundColor(Color(hex: 0x4F4F4F))
@@ -212,17 +218,17 @@ struct meNuView : View {
                     .cornerRadius(10)
                     .overlay(content: {
                         HStack {
-                            Menu("\(teample)") {
+                            Menu("\(ex)") {
                                 Button("1",
-                                       action: { teample = "1"})
+                                       action: { ex = "1"})
                                 Button("2",
-                                       action: { teample = "2"})
+                                       action: { ex = "2"})
                                 Button("3",
-                                       action: { teample = "3"})
+                                       action: { ex = "3"})
                                 Button("4",
-                                       action: { teample = "4"})
+                                       action: { ex = "4"})
                                 Button("5",
-                                       action: { teample = "5"})
+                                       action: { ex = "5"})
                                 
                             }
                             .foregroundColor(Color(hex: 0x4F4F4F))
@@ -242,17 +248,17 @@ struct meNuView : View {
                     .cornerRadius(10)
                     .overlay(content: {
                         HStack {
-                            Menu("\(teample)") {
+                            Menu("\(pr)") {
                                 Button("1",
-                                       action: { teample = "1"})
+                                       action: { pr = "1"})
                                 Button("2",
-                                       action: { teample = "2"})
+                                       action: { pr = "2"})
                                 Button("3",
-                                       action: { teample = "3"})
+                                       action: { pr = "3"})
                                 Button("4",
-                                       action: { teample = "4"})
+                                       action: { pr = "4"})
                                 Button("5",
-                                       action: { teample = "5"})
+                                       action: { pr = "5"})
                                 
                             }
                             .foregroundColor(Color(hex: 0x4F4F4F))

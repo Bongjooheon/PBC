@@ -16,7 +16,7 @@ struct EvaluationDetail: View {
             VStack {
                 Text("촉촉한 초코칩 님은 지금 2023-1 학기 입니다.")
                     .font(.system(size: 17))
-                    .padding(.top, 20)
+                    .padding(.bottom, -10)
                 meNuView()
                     .padding()
                 
@@ -29,6 +29,7 @@ struct EvaluationDetail: View {
                                 self.presentationMode.wrappedValue.dismiss()
                             } label: {
                                 Text("저장")
+                                    .frame(width: 350, height: 40)
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 15))
                             }
@@ -45,8 +46,9 @@ struct EvaluationDetail: View {
                             } label: {
                                 
                                     Text("목록으로")
-                                        .foregroundColor(Color.black)
-                                        .font(.system(size: 15))
+                                    .frame(width: 350, height: 40)
+                                    .foregroundColor(Color.black)
+                                    .font(.system(size: 15))
                                 
                             }
                             

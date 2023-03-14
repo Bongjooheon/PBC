@@ -53,8 +53,8 @@ struct myEvaluationView: View {
                     Spacer()
                 }
                 ScrollView{
-                    LisTView()
-                    LisTView()
+                    myLisTView()
+                    myLisTView()
                         
                 }
                 .padding(.top, -20)
