@@ -22,9 +22,9 @@ struct EvaluationView: View {
                         .background(Color(uiColor: .secondarySystemBackground))
                         .cornerRadius(10)
                     
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 5)
-                            .stroke(Color(hex: 0x9AC1D1), lineWidth: 3))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(Color(hex: 0x9AC1D1), lineWidth: 3))
                     
                     Button(action: {}, label: {
                         Image("검색버튼")
@@ -49,15 +49,16 @@ struct EvaluationView: View {
                         })
                 }
                 .padding(.bottom, 10)
-            
-                ScrollView{
+                
+                ScrollView(showsIndicators: false, content: {
+                    Spacer()
                     LisTView()
                     LisTView()
-                        
-                }
+                    
+                })
                 .padding(.top, -20)
+                
             }
-
         }
         .navigationBarBackButtonHidden(true)
     }

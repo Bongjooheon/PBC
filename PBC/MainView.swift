@@ -84,6 +84,9 @@ struct user_post: View{
                 } label: {
                     Text("더 보기")
                 }
+//                NavigationLink(destination: myEvaluationView(), label: {
+//                    Text("더 보기")
+//                })
             }
             .font(.system(size: 10))
             .foregroundColor(Color(hex: 0x7D7D7D))

@@ -1,93 +1,95 @@
-//
-//  LisTView.swift
-//  skhuaz
-//
-//  Created by 봉주헌 on 2023/03/11.
-//
-import Charts
+import Foundation
 import SwiftUI
 
-
-struct Posting: Identifiable {
-  let name: String
-  let count: Int
-  
-  var id: String { name }
-}
-
-let postings: [Posting] = [
-  .init(name: "발표량", count: 2),
-  .init(name: "과제량", count: 8),
-  .init(name: "실습량", count: 8),
-  .init(name: "팀플유무", count: 5)
-]
 struct LisTView: View {
-    @State private var input = ""
-    @State private var review = ""
-    var body: some View {
-        VStack{
-            HStack{
-                Text("데이터베이스 | 홍은지")
-                    .font(.system(size: 17)).bold()
-                    .padding(.leading,2)
-                    .padding(.trailing, 25)
-                Spacer()
-                Image(systemName: "star.fill")
-                    .font(.system(size: 15))
-                Image(systemName: "star.fill")
-                    .font(.system(size: 15))
-                Image(systemName: "star.fill")
-                    .font(.system(size: 15))
-                Image(systemName: "star.fill")
-                    .font(.system(size: 15))
-                Image(systemName: "star.fill")
-                    .font(.system(size: 15))
-                Spacer()
-            }
-            Chart {
-                ForEach(postings) { posting in
-                    BarMark(
-                        x: .value("Name", posting.count),
-                        y: .value("Posting", posting.name)
-                    )
+    @State var test: String = ""
+    @State var testpoint: Int = 4
+    
+    var body: some View{
+        Group{
+            VStack(spacing: 10){
+                Group{
+                    HStack{
+                        Text("강의명 | 교수명 | 수강학기")
+                        Spacer()
+                        Text("☆★★★★")
+                    }
+                    .font(.system(size: 14))
+                    .padding()
                 }
-            }.foregroundColor(Color(hex: 0x9AC1D1))
-            TextField("강의총평 100자 이하", text: $review)
-                .padding(.bottom, 50)
-                .padding([.leading, .top])
-                .frame(width: 320, height: 70)
+                .frame(width: 320, height: 40)
                 .background(Color(uiColor: .secondarySystemBackground))
-                .cornerRadius(10)
-            HStack{
-                Spacer()
-                Button(action: {}, label: {
-                    Text("추천")
-                        .padding(.horizontal, 20)
-                })
-                .foregroundColor(.black)
-                .frame(width: 85, height: 24)
-                .background(Color(hex: 0x9AC1D1))
-                .cornerRadius(10)
-                Button(action: {}, label: {
-                    Text("비추천")
-                        .padding(.horizontal, 20)
-                })
-                .foregroundColor(.black)
-                .frame(width: 85, height: 24)
-                .background(Color(.gray))
-                .cornerRadius(10)
+                Group{
+                    HStack{
+                        VStack(alignment:.trailing, spacing: 8){
+                            Text("팀플 유무")
+                            Text("과제량")
+                            Text("실습량")
+                            Text("발표량")
+                        }
+                        .font(.system(size: 12))
+                        VStack(alignment:.leading){
+                            Text("5점 기준 그래프")
+                                .frame(width: 260, height: 15)
+                                .background(Color(hex: 0x9AC1D1))
+                            Text("3점 기준 그래프")
+                                .frame(width: 156, height: 15)
+                                .background(Color(hex: 0x9AC1D1))
+                            Text("1점")
+                                .frame(width: 52, height: 15)
+                                .background(Color(hex: 0x9AC1D1))
+                            chartView(point: $testpoint)
+                        }
+                        .frame(width: 260, height: 90)
+                        .background(Color(uiColor: .secondarySystemBackground))
+
+                    }
+                }
+                .frame(width: 320, height: 100)
+                Group{
+                    TextField("강의총평 100자 제한", text: $test)
+                        .padding([.bottom], 30)
+                        .padding([.leading], 10)
+                        .frame(width: 320, height: 60)
+                        .font(.system(size: 10))
+                        .background(Color(uiColor: .secondarySystemBackground))
+                }
+                .padding(.bottom, 10)
+                HStack{
+                    Text("작성자 | 작성일")
+                        .padding(.leading, 15)
+                    Spacer()
+//                    Button(action: {}, label: {
+//                        Text("추천")
+//                            .padding(.horizontal, 20)
+//                    })
+//                    .foregroundColor(.black)
+//                    .frame(width: 85, height: 24)
+//                    .background(Color(hex: 0x9AC1D1))
+//                    .cornerRadius(10)
+//                    Button(action: {}, label: {
+//                        Text("비추천")
+//                            .padding(.horizontal, 20)
+//                    })
+//                    .foregroundColor(.black)
+//                    .frame(width: 85, height: 24)
+//                    .background(Color(hex: 0xEFEFEF))
+//                    .cornerRadius(10)
+//                    .padding(.trailing, 15)
+                }
+                .font(.system(size: 12))
+
             }
+
         }
-        .padding()
-        .padding()
-        .frame(width: 390, height: 300)
+        .frame(width: 350, height: 300)
         .overlay(
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.black, lineWidth: 3)
-                .padding()
-        )
+                RoundedRectangle(cornerRadius: 16)
+                    .stroke(Color.black, lineWidth: 2))
     }
 }
+
+
 
 struct LisTView_Previews: PreviewProvider {
     static var previews: some View {

@@ -53,6 +53,9 @@ struct myEvaluationView: View {
                     Spacer()
                 }
                 ScrollView{
+                    Spacer()
+                    Spacer()
+                    
                     myLisTView()
                     myLisTView()
                         
