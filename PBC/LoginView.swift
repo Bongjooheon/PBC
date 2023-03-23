@@ -18,6 +18,8 @@ struct LoginView: View {
                     .frame(width: 50, height: 50)
                     .padding(.bottom)
                 TextField("아이디를 입력해주세요", text: $User_id)
+                    .keyboardType(.emailAddress)
+                    .autocapitalization(.none)
                     .padding()
                     .frame(width: 350, height: 50)
                     .background(Color(uiColor: .secondarySystemBackground))

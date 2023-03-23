@@ -18,7 +18,8 @@ struct EvaluationView: View {
                 HStack{
                     TextField("강의를 입력해주세요", text: $input)
                         .padding(.leading, 10)
-                        .frame(width: 300, height: 50)
+                        .font(.system(size: 14))
+                        .frame(width: 300, height: 40)
                         .background(Color(uiColor: .secondarySystemBackground))
                         .cornerRadius(10)
                     
