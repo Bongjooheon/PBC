@@ -51,7 +51,7 @@ struct LoginView: View {
                                 .foregroundColor(Color.gray)
                         })
                     NavigationLink(
-                        destination: SignUp(),
+                        destination: SignUpView(),
                         label:{
                             Text("회원가입")
                                 .font(.system(size: 10))

@@ -21,7 +21,7 @@
 		01CD2DE729B5BC5B0073AB99 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DE629B5BC5B0073AB99 /* MainView.swift */; };
 		01CD2DE929B5BC7A0073AB99 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DE829B5BC7A0073AB99 /* RootView.swift */; };
 		01CD2DEB29B5BC840073AB99 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DEA29B5BC840073AB99 /* SettingView.swift */; };
-		01CD2DED29B5BC8D0073AB99 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DEC29B5BC8D0073AB99 /* Signup.swift */; };
+		01CD2DED29B5BC8D0073AB99 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DEC29B5BC8D0073AB99 /* SignupView.swift */; };
 		01CD2DF129B5BD210073AB99 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DF029B5BD210073AB99 /* TabbarView.swift */; };
 		01CD2DF529BC6B360073AB99 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DF429BC6B360073AB99 /* CheckBoxView.swift */; };
 		01CD2DF729BC712D0073AB99 /* LisTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD2DF629BC712D0073AB99 /* LisTView.swift */; };
@@ -68,7 +68,7 @@
 		01CD2DE629B5BC5B0073AB99 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		01CD2DE829B5BC7A0073AB99 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		01CD2DEA29B5BC840073AB99 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		01CD2DEC29B5BC8D0073AB99 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		01CD2DEC29B5BC8D0073AB99 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		01CD2DF029B5BD210073AB99 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		01CD2DF429BC6B360073AB99 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		01CD2DF629BC712D0073AB99 /* LisTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LisTView.swift; sourceTree = "<group>"; };
@@ -105,9 +105,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		016F300529D9586A006612C8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		01CD2DA829B584AE0073AB99 = {
 			isa = PBXGroup;
 			children = (
+				016F300529D9586A006612C8 /* API */,
 				01CD2DFC29BC871F0073AB99 /* SorceView */,
 				01CD2DB329B584AE0073AB99 /* PBC */,
 				01CD2DC429B584AE0073AB99 /* PBCTests */,
@@ -142,7 +150,7 @@
 				01CD2DE229B5BC320073AB99 /* FindView.swift */,
 				01CD2DE429B5BC3E0073AB99 /* LoginView.swift */,
 				01CD2DF829BC77AE0073AB99 /* ColorView.swift */,
-				01CD2DEC29B5BC8D0073AB99 /* Signup.swift */,
+				01CD2DEC29B5BC8D0073AB99 /* SignupView.swift */,
 				01CD2DF029B5BD210073AB99 /* TabbarView.swift */,
 				01CD2DE629B5BC5B0073AB99 /* MainView.swift */,
 				01CD2DE829B5BC7A0073AB99 /* RootView.swift */,
@@ -202,6 +210,8 @@
 			dependencies = (
 			);
 			name = skhuaz;
+			packageProductDependencies = (
+			);
 			productName = PBC;
 			productReference = 01CD2DB129B584AE0073AB99 /* skhuaz.app */;
 			productType = "com.apple.product-type.application";
@@ -274,6 +284,8 @@
 				Base,
 			);
 			mainGroup = 01CD2DA829B584AE0073AB99;
+			packageReferences = (
+			);
 			productRefGroup = 01CD2DB229B584AE0073AB99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -319,7 +331,7 @@
 				01CD2DE929B5BC7A0073AB99 /* RootView.swift in Sources */,
 				01CD2E0029BC8FA00073AB99 /* meNuView.swift in Sources */,
 				01CD2E0229BDBC630073AB99 /* myEvaluationView.swift in Sources */,
-				01CD2DED29B5BC8D0073AB99 /* Signup.swift in Sources */,
+				01CD2DED29B5BC8D0073AB99 /* SignupView.swift in Sources */,
 				01CD2DF929BC77AE0073AB99 /* ColorView.swift in Sources */,
 				01CD2DE529B5BC3E0073AB99 /* LoginView.swift in Sources */,
 				01CD2DE729B5BC5B0073AB99 /* MainView.swift in Sources */,
