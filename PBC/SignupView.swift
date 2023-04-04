@@ -29,7 +29,6 @@ struct SignUpView: View {
     @State private var ShowModel: Bool = false
     @State private var certification: Bool = false
     
-    
     let SelectedMajor1 = [
         "소프트웨어공학",
         "정보통신공학",
@@ -45,7 +44,6 @@ struct SignUpView: View {
     
     
     @State var MarjorError: String = "선택한 두 전공이 같습니다"
-    
     struct ModalView: View {
         @State private var test: String = ""
         @Environment(\.presentationMode) var presentatio
@@ -526,13 +524,18 @@ struct SignUpView: View {
                     }
                 }.padding(.bottom, 30)
                 Spacer()
-                Text("회원가입")
-                    .frame(width: 330, height: 10)
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color(red: 0.603, green: 0.756, blue: 0.819))
-                    .cornerRadius(10)
+                Button(action: {
+                    sendPostRequest()
+                }, label: {
+                    
+                    Text("회원가입")
+                        .frame(width: 330, height: 10)
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color(red: 0.603, green: 0.756, blue: 0.819))
+                        .cornerRadius(10)
+                })
             }
                 
             }//VStack 종료 부분
@@ -541,11 +544,52 @@ struct SignUpView: View {
             
         }
     }
+func sendPostRequest() {
+    let url = URL(string: "http://skhuaz.duckdns.org/users/new-user")!
+    var request = URLRequest(url: url)
+    request.httpMethod = "POST"
 
+    let postModel = PostModel(email: "email", password: "password", nickname: "nickname", graduate: "graduate", major1: "major1", major2: "major2", department: "department", majorMinor: "majorMinor", doubleMajor: "doubleMajor")
+    
+    request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+    request.httpBody = try? JSONEncoder().encode(postModel)
+    
+    URLSession.shared.dataTask(with: request) { data, response, error in
+        if let error = error {
+            print("Error: \(error.localizedDescription)")
+            return
+        }
 
-struct SignupView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignUpView()
-    }
+        if let response = response as? HTTPURLResponse,
+           (200..<300).contains(response.statusCode),
+           let data = data,
+           let responseString = String(data: data, encoding: .utf8) {
+            print("API 호출 성공")
+            print("Response: \(responseString)")
+            DispatchQueue.main.async {
+                // UI 업데이트는 메인 스레드에서 실행되어야 함
+                // 성공 메시지를 출력하는 Alert를 띄움
+                let alert = UIAlertController(title: "Success", message: "API 호출 성공", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true)
+            }
+        } else {
+            print("API 호출 실패")
+            DispatchQueue.main.async {
+                // 실패 메시지를 출력하는 Alert를 띄움
+                let alert = UIAlertController(title: "Error", message: "API 호출 실패 \(String(describing: response))", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true)
+            }
+        }
+    }.resume()
 }
+
+
+
+//struct SignupView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SignUpView()
+//    }
+//}
 
